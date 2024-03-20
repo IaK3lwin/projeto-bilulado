@@ -11,7 +11,7 @@
     <h1>Vai ter maratona ghibli nesse final de semana?</h1>
     <main id="conteiner">
 
-        <a href="pags/yes.html" onclick="on_click_yes()" id="on">Sim!</a>
+        <a href="pags/yes.html" onclick="on_click_yes()" id="on" target="_blank">Sim!</a>
         <a href="#" onclick="on_click_no()" id="botton_no">Não!</a>
  
     </main>
@@ -21,10 +21,14 @@
         let size_conteiner = {"w": 300, "h": 200}
         let button_no = document.querySelector("#botton_no")
         console.log(button_no)
+        const audioYes = new Audio("assets/yes.mp3")
 
         function on_click_yes()
         {
+            setTimeout(audioYes.play(), 2000);
+            
             console.log("apertou")
+            setTimeout(2)
         }
 
         function on_click_no()
@@ -32,7 +36,6 @@
             console.log("executandoo função")
             button_no.style = `position: absolute; top: ${Math.random() * (size_conteiner["h"] - 40)}px; left: ${Math.random() * (size_conteiner["h"] - 40)}px ;`
         }
-       
     </script>
 </body>
 </html>
