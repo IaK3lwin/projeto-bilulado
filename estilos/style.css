@@ -1,0 +1,84 @@
+/* regras do css*/
+@charset "UTF-8";
+
+/* config global */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* mobile first */
+
+body, html
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(38, 22, 85) url("../assets/bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5%;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.48) ;
+    
+}
+
+#conteiner
+{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.338);
+    border-radius: 8px;
+    margin-top: 5%;
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.283);
+}
+
+
+
+#conteiner > a#on
+{
+    
+
+    display: inline-block;
+    background-color: rgb(70, 70, 207);
+    text-align: center;
+    text-decoration: none;
+
+    margin-top: 26%;
+    margin-left: 22%;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    color: black;
+
+
+}
+
+#conteiner > a#botton_no
+{
+    
+
+    display: inline-block;
+    background-color: rgb(70, 70, 207);
+    text-align: center;
+    text-decoration: none;
+
+    margin-top: 26%;
+    margin-left: 22%;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    color: black;
+
+
+}
+#conteiner > a:hover
+{
+    background-color: rgb(57, 57, 173);
+}

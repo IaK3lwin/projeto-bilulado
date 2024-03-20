@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Vai ter filminho? &#x1F914;</title>
+</head>
+<body>
+    <!-- conteúdo do site -->
+    <h1>Vai ter maratona ghibli nesse final de semana?</h1>
+    <main id="conteiner">
+
+        <a href="pags/yes.html" onclick="on_click_yes()" id="on">Sim!</a>
+        <a href="#" onclick="on_click_no()" id="botton_no">Não!</a>
+ 
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        let size_conteiner = {"w": 300, "h": 200}
+        let button_no = document.querySelector("#botton_no")
+        console.log(button_no)
+
+        function on_click_yes()
+        {
+            console.log("apertou")
+        }
+
+        function on_click_no()
+        {
+            console.log("executandoo função")
+            button_no.style = `position: absolute; top: ${Math.random() * (size_conteiner["h"] - 40)}px; left: ${Math.random() * (size_conteiner["h"] - 40)}px ;`
+        }
+       
+    </script>
+</body>
+</html>
